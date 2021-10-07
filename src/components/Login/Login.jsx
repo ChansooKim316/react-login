@@ -45,6 +45,7 @@ class Login extends Component {
     }
 
     render() {
+        console.log('LOGIN.JSX - CURRENT STATE :', this.state)
         return(
             <div>
                 <h3>CKPUSH4</h3>
