@@ -26,6 +26,10 @@ class App extends Component {
         this.setState({currPage: 'page1'})
     }
 
+    onPageChange = (data) => {
+        this.setState({currPage: data.currPage})
+    }
+
     render() {
         const currPage = this.state.currPage;
         console.log('APP.JS - CURRENT STATE :', this.state); //true
@@ -39,23 +43,15 @@ class App extends Component {
             case 'page1' :
                 return (
                     <div className="container">
-                        <div className="sideBar">
-                            <Sidebar/>
-                        </div>
-                        <div className="page1">
-                            <Page1 />
-                        </div>
+                        <Sidebar onPageChange={this.onPageChange}/>
+                        <Page1 />
                     </div>
                 );
             case 'page2' :
                 return (
                     <div className="container">
-                        <div className="sideBar">
-                            <Sidebar/>
-                        </div>
-                        <div className="page2">
-                            <Page2 />
-                        </div>
+                        <Sidebar/>
+                        <Page2 />
                     </div>
                 )
             // 이후 다른 페이지들 추가 가능

@@ -5,7 +5,7 @@ class Page_2 extends Component {
     render() {
         return(
             <div className="page2">
-                <h3>PAGE 2</h3>
+                <h3>PAGE 2 : HELLO WORLD</h3>
             </div>
         )
     }
