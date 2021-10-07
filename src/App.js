@@ -12,22 +12,33 @@ const initialState = {
     currPage: null
 }
 
+// 아이디 비번
 
-// function App() {
 class App extends Component {
+
     constructor() {
         super();
         this.state = initialState;
     }
 
+    validateUserInfo = (id, pw) => {
+
+    }
+
+    onLoginStatusChange = (data) => {
+        // 여기서 아이디 비번 체크 ?
+        this.setState({isLoggedin: data.isLoggedin})
+        this.setState({currPage: 'page1'})
+    }
+
     render() {
-        const currPage = initialState.currPage;
-        console.log('CURRENT STATE :', initialState);
-        if(initialState.isLoggedin) {
+        const currPage = this.state.currPage;
+        console.log('APP.JS - CURRENT STATE :', this.state); //true
+        if(this.state.isLoggedin) {
             console.log('NOW LOGGED IN !!!')
         }
-        if (!initialState.isLoggedin) {
-            return <Login />
+        if (!this.state.isLoggedin) {
+            return <Login onLoginStatusChange={this.onLoginStatusChange}/>
         }
         switch (currPage) {
             case 'page1' :

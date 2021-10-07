@@ -17,14 +17,14 @@ class Login extends Component {
     onPasswordChange = (event) => {
         this.setState({password: event.target.value})
     }
-    submitLogIn = () => {
-        this.setState({isLoggedin: true})
-        // App.js 로 this.state 전달
-        // ??
+    loginSubmit = () => {
+        // 아이디 비번체크 : 맞으면 아래 로직 수행
+        // this.setState({isLoggedin: true});  // 실행시 isLoggedin 이 수정 안된채로 App.js 로 전달됨.
+        this.state.isLoggedin = true;
+        this.props.onLoginStatusChange(this.state); // App.js 로 this.state 전달
     }
 
     render() {
-        console.log('STATE :', this.state)
         return(
             <div>
                 <h3> LOGIN PAGE</h3>
@@ -38,7 +38,7 @@ class Login extends Component {
                 </div>
 
                 <div className="submit">
-                    <input type="submit" value="submit" onClick={this.submitLogIn} />
+                    <input type="submit" value="submit" onClick={this.loginSubmit} />
                 </div>
             </div>
         )
