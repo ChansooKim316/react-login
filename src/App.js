@@ -21,12 +21,7 @@ class App extends Component {
         this.state = initialState;
     }
 
-    validateUserInfo = (id, pw) => {
-        //맞으면 트루, 틀리면 alert
-    }
-
     onLoginStatusChange = (data) => {
-        // 여기서 아이디 비번 체크 ?
         this.setState({isLoggedin: data.isLoggedin})
         this.setState({currPage: 'page1'})
     }
