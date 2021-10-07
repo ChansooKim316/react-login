@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c85ef114-2a33-42bc-9151-797b404ef547" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/Filter/Filter.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Table/Table.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/user_data/user_data.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page_1/Page_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_1/Page_1.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page_1/Page_1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_1/Page_1.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page_2/Page_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_2/Page_2.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page_2/Page_2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_2/Page_2.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
-    </list>
+    <list default="true" id="c85ef114-2a33-42bc-9151-797b404ef547" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
