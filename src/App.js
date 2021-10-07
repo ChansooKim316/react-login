@@ -22,7 +22,7 @@ class App extends Component {
     }
 
     validateUserInfo = (id, pw) => {
-
+        //맞으면 트루, 틀리면 alert
     }
 
     onLoginStatusChange = (data) => {
