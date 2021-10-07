@@ -27,18 +27,18 @@ class Login extends Component {
     render() {
         return(
             <div>
-                <h3> LOGIN PAGE</h3>
+                <h3>CKPUSH4</h3>
                 <div className="id" >
-                    <b>ID : </b>
-                    <input type="id" id="id-input" placeholder="ckstack" onChange={this.onIdChange}/>
+                    {/*<b>ID : </b>*/}
+                    <input type="id" id="id-input" placeholder="sjkim@ckstack.com" onChange={this.onIdChange}/>
                 </div>
                 <div className="password">
-                    <b>PW : </b>
-                    <input type="id" id="id-input" placeholder="1234" onChange={this.onPasswordChange}/>
+                    {/*<b>PW : </b>*/}
+                    <input type="password" id="pw-input" placeholder="abcd1234" onChange={this.onPasswordChange}/>
                 </div>
 
                 <div className="submit">
-                    <input type="submit" value="submit" onClick={this.loginSubmit} />
+                    <input type="submit" id="submit" value="로그인" onClick={this.loginSubmit} />
                 </div>
             </div>
         )
