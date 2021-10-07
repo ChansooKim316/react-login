@@ -30,11 +30,11 @@ class Login extends Component {
                 <h3>CKPUSH4</h3>
                 <div className="id" >
                     {/*<b>ID : </b>*/}
-                    <input type="id" id="id-input" placeholder="sjkim@ckstack.com" onChange={this.onIdChange}/>
+                    <input type="id" id="id-input" placeholder="ckstack" onChange={this.onIdChange}/>
                 </div>
                 <div className="password">
                     {/*<b>PW : </b>*/}
-                    <input type="password" id="pw-input" placeholder="abcd1234" onChange={this.onPasswordChange}/>
+                    <input type="password" id="pw-input" placeholder="1234" onChange={this.onPasswordChange}/>
                 </div>
 
                 <div className="submit">
