@@ -1,0 +1,10 @@
+.sideBar {
+    background-color: cadetblue;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+.html, body {
+    height: 100%;
+}
