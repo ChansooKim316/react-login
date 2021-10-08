@@ -5,11 +5,25 @@
   height: 100%;
 }
 
-.html, body {
+.wrapper-sidebar {
   height: 100%;
+  width: 100%;
 }
 
+.wrapper-page1 {
+  height: 100%;
+  width: 100%;
+}
 
+.html, body {
+  height: 100%;
+  display: flex;
+}
+
+#root {
+  /*height: 500%;*/
+  /*width: 100%;*/
+}
 .App {
   text-align: center;
 }
