@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './Sidebar.css';
 
 class Sidebar extends Component {
-
     constructor(props) {
         super();
         this.state = {
@@ -20,18 +19,20 @@ class Sidebar extends Component {
 
     render() {
         return(
-            <div className="sideBar">
-                <div id="title">
-                    CKPUSH4
-                </div>
-                <div className="all-menus">
-                    <div id="menu1">
-                        <button type="button" onClick={() => {this.movePage("page1")}} >PAGE 1</button>
+            <div className="sidebar">
+                {/*<div className="wrapper">*/}
+                    <div className="title">
+                        CKPUSH4
                     </div>
-                    <div id="menu2">
-                        <button type="button" onClick={() => {this.movePage("page2")}} >PAGE 2</button>
+                    <div className="all-menus">
+                        <div className="buttons">
+                            <button type="button" onClick={() => {this.movePage("page1")}} >PAGE 1</button>
+                        </div>
+                        <div className="buttons">
+                            <button type="button" onClick={() => {this.movePage("page2")}} >PAGE 2</button>
+                        </div>
                     </div>
-                </div>
+                {/*</div>*/}
             </div>
         )
     }

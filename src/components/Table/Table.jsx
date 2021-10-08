@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Login from "../Login/Login";
 
 
 class Table extends Component {
@@ -35,17 +34,10 @@ class Table extends Component {
 
     render() {
         const filteredUserData = this.props;
-<<<<<<< HEAD
-        console.log('GIVEN USER DATA :', filteredUserData)
-
-        return (
-            <div>
-                TABLE COMPONENT
-=======
+        console.log('FILTERED DATA :', filteredUserData)
         return (
             <div>
                 {this.dataToTable(filteredUserData)}
->>>>>>> page1
             </div>
         )
     }

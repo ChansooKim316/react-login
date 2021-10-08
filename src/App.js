@@ -33,9 +33,6 @@ class App extends Component {
     render() {
         const currPage = this.state.currPage;
         console.log('APP.JS - CURRENT STATE :', this.state); //true
-        if(this.state.isLoggedin) {
-            console.log('NOW LOGGED IN !!!')
-        }
         if (!this.state.isLoggedin) {
             return <Login onLoginStatusChange={this.onLoginStatusChange}/>
         }
@@ -43,18 +40,25 @@ class App extends Component {
             case 'page1' :
                 return (
                     <div className="container">
-                        <Sidebar onPageChange={this.onPageChange}/>
-                        <Page1 />
+                        <div className="wrapper-sidebar">
+                            <Sidebar onPageChange={this.onPageChange}/>
+                        </div>
+                        <div className="wrapper-pages">
+                            <Page1 />
+                        </div>
                     </div>
                 );
             case 'page2' :
                 return (
                     <div className="container">
-                        <Sidebar/>
-                        <Page2 />
+                        <div className="wrapper-sidebar">
+                            <Sidebar onPageChange={this.onPageChange}/>
+                        </div>
+                        <div className="wrapper-pages">
+                            <Page2 />
+                        </div>
                     </div>
                 )
-            // 이후 다른 페이지들 추가 가능
             default :
                 return '<h3>Something went wrong. Please try again</h3>'
         }

@@ -67,20 +67,26 @@ class Page_1 extends Component {
         if (!this.state.showTable) {
             return(
                 <div className="page1">
-                    <h3>PAGE 1</h3>
+                    <b>PAGE 1</b>
                     <Filter onFilterConditionChange={this.onFilterConditionChange}/>
-                    검색 후 테이블 출력
+                    (조건 미입력시 데이터 전체 출력)
+                    <br/><br/>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <th>번호</th>
+                                <th>이름</th>
+                                <th>나이</th>
+                                <th>성별</th>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             )
         } else if (this.state.showTable){
-            // 검색조건에 맞는 사용자 거르기
-            // this.filterUserData(userData)
-            // table 컴포넌트에 걸러진 사용자 전달
-
-
             return (
                 <div className="page1">
-                    <h3>PAGE 1</h3>
+                    <b>PAGE 1</b>
                     <Filter onFilterConditionChange={this.onFilterConditionChange}/>
                     <Table result={this.filterUserData(userData)}/>
                 </div>

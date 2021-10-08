@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 
 
-
 class Filter extends Component {
     constructor(props) {
         super(props);
@@ -31,8 +30,7 @@ class Filter extends Component {
         console.log('FILTER.JSX - STATE :',this.state)
         return (
             <div>
-                FILTER COMPONENT
-                <br/><br/>
+                <br/>
                 <label >이름 : </label>
                 <input type="text" id="name" onChange={this.onNameChange}/><br/>
                 <label >나이 : </label>

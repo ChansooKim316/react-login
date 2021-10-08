@@ -5,7 +5,10 @@ class Page_2 extends Component {
     render() {
         return(
             <div className="page2">
-                <h3>PAGE 2 : HELLO WORLD</h3>
+                <b>PAGE 2</b>
+                <br/><br/><br/><br/>
+                <b>HELLO WORLD</b>
+                <br/><br/><br/><br/>
             </div>
         )
     }

@@ -3,13 +3,27 @@
   flex-direction: row;
   align-items: stretch;
   height: 100%;
+  width: 100%;
+}
+
+.wrapper-sidebar {
+  width: 20rem;
+}
+
+.wrapper-pages {
+  height: 100%;
+  width: 100rem;
 }
 
 .html, body {
   height: 100%;
+  width: 100%;
 }
 
-
+#root {
+  height: 100%;
+  width: 100%;
+}
 .App {
   text-align: center;
 }
