@@ -15,14 +15,14 @@ class Table extends Component {
                         <th>나이</th>
                         <th>성별</th>
                     </tr>
-                    {filteredUserData.map(data => (
-                        <tr>
-                            <td>{data.id}</td>
-                            <td>{data.name}</td>
-                            <td>{data.age}</td>
-                            <td>{data.sex}</td>
-                        </tr>
-                    ))}
+                    {/*{filteredUserData.map(data => (*/}
+                    {/*    <tr>*/}
+                    {/*        <td>{data.id}</td>*/}
+                    {/*        <td>{data.name}</td>*/}
+                    {/*        <td>{data.age}</td>*/}
+                    {/*        <td>{data.sex}</td>*/}
+                    {/*    </tr>*/}
+                    {/*))}*/}
                 </table>
             </div>
         )
