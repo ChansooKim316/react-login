@@ -2,19 +2,19 @@ const userData = [
     {
         id: 1,
         name: '김찬수1',
-        age: 21,
+        age: 20,
         sex: 'M',
     },
     {
         id: 2,
         name: '김찬수2',
-        age: 22,
+        age: 20,
         sex: 'M',
     },
     {
         id: 3,
         name: '김찬수3',
-        age: 23,
+        age: 20,
         sex: 'M',
     },
     {

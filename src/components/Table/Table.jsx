@@ -1,29 +1,42 @@
 import React, { Component } from "react";
+import Login from "../Login/Login";
 
 class Table extends Component {
+
+    dataToTable = (data) => {
+        const headers =
+            <tr>
+                <th>번호</th>
+                <th>이름</th>
+                <th>나이</th>
+                <th>성별</th>
+            </tr>;
+        let rows = [];
+        for (let user of data.result) {
+            rows.push(
+                <tr>
+                    <td>{user.id}</td>
+                    <td>{user.name}</td>
+                    <td>{user.age}</td>
+                    <td>{user.sex}</td>
+                </tr>
+            )
+        }
+
+        return <table>
+                    <tbody>
+                        {headers}
+                        {rows}
+                    </tbody>
+                </table>
+
+    }
+
     render() {
         const filteredUserData = this.props;
-        console.log('GIVEN USER DATA :', filteredUserData)
         return (
             <div>
-                TABLE COMPONENT
-                <p>----- table -----</p>
-                <table>
-                    <tr>
-                        <th>번호</th>
-                        <th>이름</th>
-                        <th>나이</th>
-                        <th>성별</th>
-                    </tr>
-                    {filteredUserData.map(data => (
-                        <tr>
-                            <td>{data.id}</td>
-                            <td>{data.name}</td>
-                            <td>{data.age}</td>
-                            <td>{data.sex}</td>
-                        </tr>
-                    ))}
-                </table>
+                {this.dataToTable(filteredUserData)}
             </div>
         )
     }
