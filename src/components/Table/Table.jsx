@@ -33,6 +33,7 @@ class Table extends Component {
 
     render() {
         const filteredUserData = this.props;
+        console.log('FILTERED DATA :', filteredUserData)
         return (
             <div>
                 {this.dataToTable(filteredUserData)}

@@ -43,7 +43,7 @@ class App extends Component {
                         <div className="wrapper-sidebar">
                             <Sidebar onPageChange={this.onPageChange}/>
                         </div>
-                        <div className="wrapper-page1">
+                        <div className="wrapper-pages">
                             <Page1 />
                         </div>
                     </div>
@@ -51,8 +51,12 @@ class App extends Component {
             case 'page2' :
                 return (
                     <div className="container">
-                        <Sidebar onPageChange={this.onPageChange}/>
-                        <Page2 />
+                        <div className="wrapper-sidebar">
+                            <Sidebar onPageChange={this.onPageChange}/>
+                        </div>
+                        <div className="wrapper-pages">
+                            <Page2 />
+                        </div>
                     </div>
                 )
             default :

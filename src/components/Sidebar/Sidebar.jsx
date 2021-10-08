@@ -20,19 +20,19 @@ class Sidebar extends Component {
     render() {
         return(
             <div className="sidebar">
-                <div className="wrapper">
+                {/*<div className="wrapper">*/}
                     <div className="title">
                         CKPUSH4
                     </div>
                     <div className="all-menus">
-                        <div id="menu1">
+                        <div className="buttons">
                             <button type="button" onClick={() => {this.movePage("page1")}} >PAGE 1</button>
                         </div>
-                        <div id="menu2">
+                        <div className="buttons">
                             <button type="button" onClick={() => {this.movePage("page2")}} >PAGE 2</button>
                         </div>
                     </div>
-                </div>
+                {/*</div>*/}
             </div>
         )
     }

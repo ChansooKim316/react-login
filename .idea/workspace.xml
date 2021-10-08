@@ -5,7 +5,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Page_1/Page_1.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_1/Page_1.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Filter/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Page_1/Page_1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_1/Page_1.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Page_2/Page_2.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_2/Page_2.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Page_2/Page_2.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_2/Page_2.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Sidebar/Sidebar.jsx" afterDir="false" />
