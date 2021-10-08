@@ -3,7 +3,7 @@ import './Login.css'
 
 const userInfo = {
     id: 'ckstack',
-    pw: 1234
+    pw: '1234'
 }
 
 class Login extends Component {
@@ -11,8 +11,9 @@ class Login extends Component {
         super(props);
         this.state = {
             id: '',
-            pw: null,
-            isLoggedin: false
+            pw: '',
+            isLoggedin: null,
+            toggle: true
         }
     }
 
@@ -21,12 +22,12 @@ class Login extends Component {
     }
 
     onPasswordChange = (event) => {
-        this.setState({pw: Number(event.target.value)}) // 정수로 타입변환 필요 !
+        this.setState({pw: event.target.value})
     }
 
     validateUserInfo = (id, pw) => {
         //맞으면 트루, 틀리면 alert
-        if (this.state.id === userInfo.id && this.state.pw === userInfo.pw) {
+        if (id === userInfo.id && pw === userInfo.pw) {
             return true
         } else {
             alert('Invalid ID or Password')
@@ -36,13 +37,18 @@ class Login extends Component {
     loginSubmit = () => {
         // 아이디, 비번이 맞으면 아래 로직 수행
         if (this.validateUserInfo(this.state.id, this.state.pw)) {
-            // this.setState({isLoggedin: true});  // 실행시 isLoggedin 이 수정 안된채로 App.js 로 전달됨.
-            this.state.isLoggedin = true;
-            this.props.onLoginStatusChange(this.state); // App.js 로 this.state 전달
+            this.setState({isLoggedin: true});  // 1번째 클릭시 isLoggedin 이 변경안됨. 2번째 클릭시 변경됨.
+            console.log('LOGIN.JSX - LOGGEDIN TRUE? :', this.state) // isLoggedin 안바뀌어있음.
+            this.props.onLoginStatusChange(); // App.js 에서 isLoggedin 을 true 로 바꾸도록 호출.
         } else {
             return
         }
+        console.log('SUBMIT FUNC FINISHED')
     }
+
+    // toggle = () => {
+    //     this.setState({toggle: !this.state.toggle})
+    // }
 
     render() {
         console.log('LOGIN.JSX - CURRENT STATE :', this.state)
@@ -59,8 +65,12 @@ class Login extends Component {
                 </div>
 
                 <div className="submit">
-                    <input type="submit" id="submit" value="로그인" onClick={this.loginSubmit} />
+                    <input type="submit" id="submit" value="로그인" onClick={() => {
+                        console.log('-------- 로그인 CLICKED --------')
+                        this.loginSubmit()
+                    }} />
                 </div>
+                {/*<button type="button" onClick={() => {this.toggle()}}>TOGGLE BUTTON</button>*/}
             </div>
         )
     }

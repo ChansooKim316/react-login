@@ -7,7 +7,7 @@ class Filter extends Component {
         this.state = {
             name: '',
             age: null,
-            showTable: false
+            // showTable: false
         }
     }
 
@@ -21,7 +21,7 @@ class Filter extends Component {
 
     submitFilterData = () => {
         // this.setState({showTable: true}) // state 변경이 안된채로 전달돼서 아래 로직 사용
-        this.state.showTable = true;
+        // this.state.showTable = true;
         this.props.onFilterConditionChange(this.state) // Page1.jsx 로 필터정보 전달
     }
 

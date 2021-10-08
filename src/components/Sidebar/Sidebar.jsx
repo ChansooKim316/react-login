@@ -10,10 +10,10 @@ class Sidebar extends Component {
     }
 
     movePage = (destination) => {
-        // this.setState({currPage:destination})
-        this.state.currPage = destination;
-        // 2회 이상 클릭시 TypeError: this.props.onPageChange is not a function 발생
-        this.props.onPageChange(this.state)
+        console.log('DESTINATION :', destination)
+        this.setState({currPage:destination})
+        // this.state.currPage = destination; // state 변경하고 넘기지 않고 page 정보만 넘긴후 App.js 에서 state 변경하게 함.
+        this.props.onPageChange(destination) // App.js 로 destination(목적지 페이지) 넘겨주기
         console.log('CHANGED STATE :', this.state)
     }
 

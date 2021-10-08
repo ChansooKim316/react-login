@@ -7,10 +7,10 @@ import {Component} from "react";
 import "./App.css"
 
 
-const initialState = {
-    isLoggedin: false,
-    currPage: null
-}
+// const initialState = {
+//     isLoggedin: false,
+//     currPage: null
+// }
 
 // 아이디 비번
 
@@ -18,21 +18,29 @@ class App extends Component {
 
     constructor() {
         super();
-        this.state = initialState;
+        this.state = {
+            isLoggedin: false,
+            currPage: null
+        };
     }
 
     onLoginStatusChange = (data) => {
-        this.setState({isLoggedin: data.isLoggedin})
+        // console.log('DATA.ISLOGGEDIN :', data.isLoggedin);
+        // this.setState({isLoggedin: data.isLoggedin})
+        this.setState({isLoggedin: true});
+        console.log('APP.JS - LOGGED IN? :', this.state) // 여전히 FALSE
         this.setState({currPage: 'page1'})
     }
 
     onPageChange = (data) => {
-        this.setState({currPage: data.currPage})
+        console.log('DATA FROM SIDEBAR :', data)
+        this.setState({currPage: data})
+        console.log('PAGE CHNGED ? :', this.state) // 안바뀜
     }
 
     render() {
         const currPage = this.state.currPage;
-        console.log('APP.JS - CURRENT STATE :', this.state); //true
+        console.log('APP.JS - CURRENT STATE :', this.state); // 로그인 true
         if (!this.state.isLoggedin) {
             return <Login onLoginStatusChange={this.onLoginStatusChange}/>
         }
