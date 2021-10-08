@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c85ef114-2a33-42bc-9151-797b404ef547" name="Changes" comment="" />
+=======
+    <list default="true" id="c85ef114-2a33-42bc-9151-797b404ef547" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Page_1/Page_1.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Page_1/Page_1.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Table/Table.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Table/Table.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/user_data/user_data.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/user_data/user_data.js" afterDir="false" />
+    </list>
+>>>>>>> page1
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

@@ -42,12 +42,22 @@ class Page_1 extends Component {
         const result = [];
         const searchName = this.state.name;
         const searchAge = this.state.age;
+        console.log('SEARCH AGE :', searchAge)
+        // 이름조건 검색
         for (let i = 0; i < data.length; i++) {
-            if (data[i].name.includes(searchName)) {
-                result.push(data[i])
+            // 나이 입력 없을시 이름조건으로만 검색
+            if (!searchAge) {
+                if (data[i].name.includes(searchName) ) {
+                    result.push(data[i])
+                }
+            } else {
+                if (data[i].age === searchAge && data[i].name.includes(searchName) ) {
+                    result.push(data[i])
+                }
             }
         }
-        console.log('RESULT :', result)
+
+        console.log('SEARCH RESULT :', result)
         return result
     }
 
