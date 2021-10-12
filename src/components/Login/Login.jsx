@@ -37,18 +37,15 @@ class Login extends Component {
     loginSubmit = () => {
         // 아이디, 비번이 맞으면 아래 로직 수행
         if (this.validateUserInfo(this.state.id, this.state.pw)) {
-            this.setState({isLoggedin: true});  // 1번째 클릭시 isLoggedin 이 변경안됨. 2번째 클릭시 변경됨.
-            console.log('LOGIN.JSX - LOGGEDIN TRUE? :', this.state) // isLoggedin 안바뀌어있음.
-            this.props.onLoginStatusChange(); // App.js 에서 isLoggedin 을 true 로 바꾸도록 호출.
+            // this.setState({isLoggedin: true});  // 1번째 클릭시 isLoggedin 이 변경안됨. 2번째 클릭시 변경됨.
+            // console.log('LOGIN.JSX - LOGGEDIN TRUE? :', this.state) // isLoggedin 안바뀌어있음.
+            this.props.onLoginStatusChange(); // props 호출 하여 App.js 에서 isLoggedin 을 true 로 바꿈
         } else {
             return
         }
         console.log('SUBMIT FUNC FINISHED')
     }
 
-    // toggle = () => {
-    //     this.setState({toggle: !this.state.toggle})
-    // }
 
     render() {
         console.log('LOGIN.JSX - CURRENT STATE :', this.state)
@@ -70,7 +67,6 @@ class Login extends Component {
                         this.loginSubmit()
                     }} />
                 </div>
-                {/*<button type="button" onClick={() => {this.toggle()}}>TOGGLE BUTTON</button>*/}
             </div>
         )
     }

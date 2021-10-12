@@ -7,13 +7,6 @@ import {Component} from "react";
 import "./App.css"
 
 
-// const initialState = {
-//     isLoggedin: false,
-//     currPage: null
-// }
-
-// 아이디 비번
-
 class App extends Component {
 
     constructor() {
@@ -35,12 +28,12 @@ class App extends Component {
     onPageChange = (data) => {
         console.log('DATA FROM SIDEBAR :', data)
         this.setState({currPage: data})
-        console.log('PAGE CHNGED ? :', this.state) // 안바뀜
+        console.log('PAGE CHNGED ? :', this.state)
     }
 
     render() {
         const currPage = this.state.currPage;
-        console.log('APP.JS - CURRENT STATE :', this.state); // 로그인 true
+        console.log('APP.JS - CURRENT STATE :', this.state);
         if (!this.state.isLoggedin) {
             return <Login onLoginStatusChange={this.onLoginStatusChange}/>
         }
